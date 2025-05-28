@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System.IO.Pipes;
 using System.IO;
+using System.Diagnostics;
 
 namespace BluetoothNoBS;
 
@@ -34,7 +35,7 @@ internal class Program
 				Refresh(streamWriter);
 			} catch (Exception exception)
 			{
-				Console.WriteLine(exception);
+				Debug.WriteLine(exception);
 			}
 		}
 	}
